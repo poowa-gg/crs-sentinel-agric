@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-crs-blue: #00468B;
+  --color-bold-blue: #00A2C7;
+  --color-bold-teal: #0099A9;
+  --color-bold-orange: #EF6E0B;
+  --color-humble-gold: #B48F4B;
+  
+  --font-gotham: "Montserrat", sans-serif;
+  --font-baskerville: "Libre Baskerville", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-gotham);
+  }
+  
+  .narrative {
+    font-family: var(--font-baskerville);
+  }
+}
